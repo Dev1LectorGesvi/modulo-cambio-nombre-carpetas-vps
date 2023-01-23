@@ -1,7 +1,7 @@
 const http = require('http');
 const schedule = require("node-schedule")
 
-schedule.scheduleJob("0 0 0 * * *", async function () {
+schedule.scheduleJob("0 0 0 * * *",function () {
   // Se va a ejecutar todos los días a las 00:00:00
   console.log("Cambiando nombre de carpeta!");
   http
